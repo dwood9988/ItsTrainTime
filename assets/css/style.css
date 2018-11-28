@@ -1,0 +1,21 @@
+body {
+    background: rgb(159, 252, 255);
+}
+
+.jumbotron {
+    background: url("../images/NewHeaderImage.jpg");
+    background-size: 1110px 549px;
+    color: white;
+    text-shadow: 4px 2px rgb(168, 25, 25);
+    height: 500px;
+}
+.text-center {
+    font-size: 58px;
+    margin-top: -19px;
+}
+.btn {
+    margin-top: 25px;
+}
+.card {
+    background: rgb(157, 191, 197);
+}

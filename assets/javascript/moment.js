@@ -1,13 +1,13 @@
 // Initialize Firebase
-var config = {
-    apiKey: "AIzaSyDkc3AOI1D6S8-HmG_EWULsW-OLnfMZfNA",
-    authDomain: "trainschedule-fe5ea.firebaseapp.com",
-    databaseURL: "https://trainschedule-fe5ea.firebaseio.com",
-    projectId: "trainschedule-fe5ea",
-    storageBucket: "trainschedule-fe5ea.appspot.com",
-    messagingSenderId: "678416463731"
-};
-firebase.initializeApp(config);
+  var config = {
+    apiKey: "AIzaSyAbCzY5CA4pcqfXaylkgEaoxGmnUksM8eE",
+    authDomain: "trainschedule-5feb6.firebaseapp.com",
+    databaseURL: "https://trainschedule-5feb6.firebaseio.com",
+    projectId: "trainschedule-5feb6",
+    storageBucket: "",
+    messagingSenderId: "20478595893"
+  };
+  firebase.initializeApp(config);
 
 // create global database var for easier coding
 var database = firebase.database();
@@ -69,7 +69,7 @@ database.ref().on("child_added", function (childSnapshot) {
     console.log(trainRate);
 
     // make sure time of user input comes before current time for calculations by subtracting a year
-    var firstTimeConverted = moment(trainStart, "HH:mm").subtract(1, "years");
+    var firstTimeConverted = moment(trainStart, "hh:mm").subtract(1, "years");
     console.log(firstTimeConverted);
 
     // take the difference in time between the current time and the converted time
